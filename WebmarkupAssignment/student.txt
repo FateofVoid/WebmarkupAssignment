@@ -1,0 +1,3 @@
+student name : Jesse Leveque 
+student number : 635813
+student class : IT1a

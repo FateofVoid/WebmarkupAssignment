@@ -1,0 +1,295 @@
+html
+{
+	/*fallback font*/
+	font-family: "Times New Roman", Times, serif;
+	
+	/* background set, scale and center */
+	background: url("../img/background.png") center center fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body
+{
+	/* set size and center*/
+	width : 90em;
+	margin:0 auto;
+	font-size: 1em;
+}
+
+@media only screen and (max-width: 90em) {
+    body 
+	{
+		width:100%;
+		font-size:0.5em
+    }
+}
+
+.index_page body
+{
+	/*set global font [aramaters for index*/
+	
+	background-color: transparent;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.contact_page body
+{
+	background-color:#fff;
+}
+
+Header
+{
+	/* block background and adjustments*/
+	background: url("../img/companylogoBG.png") center center;
+	background-size: cover;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	
+	font: 8em "Berlin Sans FB";
+	text-align: center;
+	color: #FFFFFF;
+}
+
+nav
+{
+	/* font adjustments */
+	font: 3.5em Arial;
+	background-color: #707070;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	
+	/* block adjustments */
+	height:1.1em;
+	padding:0.2em;
+	border-width:0.01em;
+	border-style: solid;
+}
+
+@media only screen and (max-width: 30em) {
+    nav 
+	{
+		
+    }
+}
+
+aside
+{
+	font:8em Arial;
+	text-transform:uppercase;
+	border: 0.01em #fff;
+	border-style:none solid;
+}
+
+.ontop
+{
+	/*font adjustments*/
+	background-color: #2699FB;
+	font:8em Arial;
+	margin: 0em;
+	text-align: center;
+	color: #FFFFFF;
+	
+	/* text on two lines */
+	padding-left:3em;
+	padding-right:3em;
+}
+
+#nopadding
+{
+	/* keep text correctly centered */
+	padding:0.2em 0em;
+}
+
+
+
+a
+{
+	/* remove link font */
+	text-decoration: none;
+	color: #FFFFFF;
+	margin:0.3em;
+}
+
+ .index_page .container
+ {
+	 /* flexbox display and settings */
+	display:flex;
+	width:100%;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	
+	/* defines where the footer goes*/ 
+	min-height:28em;
+	
+	/* hides white space under footer in edge and ie*/
+	overflow: hidden;
+ }
+ 
+ .contact_page section
+{
+	padding:1em;
+	background-color:#F5F5F5;
+	font:3em Arial;
+}
+
+form
+{
+	padding:0em 1em 5em 1em;
+}
+
+.index_page .center
+{
+	/* image container*/
+	height: 35em;
+	position: relative;
+	margin:0%;
+	z-index:-2;
+	overflow: hidden;
+}
+
+.index_page img
+ {
+	/* image resize and center */
+	width:100%;
+	margin: 0%;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	
+	/* crop excess by hidding behind blocks */
+	z-index:-2;
+ }
+ 
+ .product_page section
+{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #fff;
+	justify-content: center;
+
+	
+}
+
+fieldset
+{
+	border:0;
+	padding:0;
+	margin:1em 0;
+	
+}
+
+#topic
+{
+	box-sizing:border-box;
+	border:0.01em solid #000;
+	font:1em Arial;
+	color:#A3A3A3;
+	padding:0.2em;
+	padding-left:0.7em;
+	margin:0;
+	margin-top:1em;
+}
+
+select
+{
+	position:relative;
+	font: 1em Arial;
+	width:70%;
+	padding-left:0.2em;
+	height:1.2em;
+	float:right;
+	border-color:#000;
+}
+
+input
+{
+	font:1em Arial;
+	box-sizing:border-box;
+	border-width:0.01em;
+	border-style:solid;
+	border-color:#000;
+	
+	padding:0.4em;
+	padding-left:0.7em;
+	width:100%;
+}
+
+::placeholder
+{
+	color:#A3A3A3;
+}
+
+textarea
+{
+	box-sizing:border-box;
+	width:100%;
+	height:5em;
+	font:1em Arial;
+	border:solid;
+	border-width:0.01em;
+	padding:0.4em;
+	padding-left:0.7em;
+	resize: none;
+}
+
+input[type=submit] 
+{
+	box-sizing: border-box;
+	border-color:#fff;
+	margin:0;
+	background-color: #2699FB;
+	width:100%;
+	color:#FFFFFF;
+}
+
+ .product_page article
+ {
+	background-color: #f1f1f1;
+	width: 29em;
+	margin: 0.1em;
+	text-align: center;
+	line-height: 15em;
+ }
+
+.product_page p
+{
+	/* image container*/
+	margin:0em;
+	width:29em;
+	height:14em;
+	position: relative;
+	margin:0%;
+	overflow: hidden;
+}
+
+.product_page img
+{
+	
+	height:15em;
+	min-width:30em;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer
+{
+	
+	/* font and block adjustments */
+	background-color: #000000;
+	height:1.1em;
+	font-size: 2.5em;
+	border-width:0.01em;
+	border-style: solid;
+	padding:0.2em;
+	text-transform:none;
+	position:relative;
+	text-align: center;
+	color: #FFFFFF;
+}
